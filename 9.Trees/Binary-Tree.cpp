@@ -9,70 +9,70 @@ class Node {
 	    friend class Binary_Tree;
 };
 class Binary_Tree {
-private:
-    Node *root = NULL;
-    Node* insert(int value, Node *temp) {
-        if (!temp) return new Node(value);
-        else if (!temp->left)  temp->left = insert(value, temp->left);
-        else temp->right = insert(value, temp->right);
-        return temp;
-    }
-    void preorder(Node *temp) {
-        if (!temp) return;
-        cout << temp->data << " - ";
-        preorder(temp->left);
-        preorder(temp->right);
-    }
-    void inorder(Node *temp) {
-        if (!temp) return;
-        inorder(temp->left);
-        cout << temp->data << " - ";
-        inorder(temp->right);
-    }
-    void postorder(Node *temp) {
-        if (!temp) return;
-        postorder(temp->left);
-        postorder(temp->right);
-        cout << temp->data << " - ";
-    }
-    Node* search(int target, Node *temp) {
-        if (!temp) return NULL;
-        if (temp->data == target) return temp;
-        Node* leftSearch = search(target, temp->left);
-        if (leftSearch) return leftSearch;
-        return search(target, temp->right);
-    }
-    Node* remove(int target, Node *temp) {
-        if (!temp) return temp;
-        if (temp->data == target) {
-            if (!temp->left && !temp->right) {
-                delete temp;
-                return NULL;
-            } else if (!temp->left) {
-                Node* tempRight = temp->right;
-                delete temp;
-                return tempRight;
-            } else if (!temp->right) {
-                Node* tempLeft = temp->left;
-                delete temp;
-                return tempLeft;
-            } else {
-                Node* tempRight = temp->right;
-                delete temp;
-                return tempRight;
-            }
-        }
-        temp->left = remove(target, temp->left);
-        temp->right = remove(target, temp->right);
-        return temp;
-    }
-public:
-    void insert(int value) { root = insert(value, root); }
-    void preorder() { preorder(root); }
-    void inorder() { inorder(root); }
-    void postorder() { postorder(root); }
-    bool search(int target) { return search(target, root) != NULL; }
-    void remove(int target) { root = remove(target, root); }
+	private:
+	    Node *root = NULL;
+	    Node* insert(int value, Node *temp) {
+	        if (!temp) return new Node(value);
+	        else if (!temp->left)  temp->left = insert(value, temp->left);
+	        else temp->right = insert(value, temp->right);
+	        return temp;
+	    }
+	    void preorder(Node *temp) {
+	        if (!temp) return;
+	        cout << temp->data << " - ";
+	        preorder(temp->left);
+	        preorder(temp->right);
+	    }
+	    void inorder(Node *temp) {
+	        if (!temp) return;
+	        inorder(temp->left);
+	        cout << temp->data << " - ";
+	        inorder(temp->right);
+	    }
+	    void postorder(Node *temp) {
+	        if (!temp) return;
+	        postorder(temp->left);
+	        postorder(temp->right);
+	        cout << temp->data << " - ";
+	    }
+	    Node* search(int target, Node *temp) {
+	        if (!temp) return NULL;
+	        if (temp->data == target) return temp;
+	        Node* leftSearch = search(target, temp->left);
+	        if (leftSearch) return leftSearch;
+	        return search(target, temp->right);
+	    }
+	    Node* remove(int target, Node *temp) {
+	        if (!temp) return temp;
+	        if (temp->data == target) {
+	            if (!temp->left && !temp->right) {
+	                delete temp;
+	                return NULL;
+	            } else if (!temp->left) {
+	                Node* tempRight = temp->right;
+	                delete temp;
+	                return tempRight;
+	            } else if (!temp->right) {
+	                Node* tempLeft = temp->left;
+	                delete temp;
+	                return tempLeft;
+	            } else {
+	                Node* tempRight = temp->right;
+	                delete temp;
+	                return tempRight;
+	            }
+	        }
+	        temp->left = remove(target, temp->left);
+	        temp->right = remove(target, temp->right);
+	        return temp;
+	    }
+	public:
+	    void insert(int value) { root = insert(value, root); }
+	    void preorder() { preorder(root); }
+	    void inorder() { inorder(root); }
+	    void postorder() { postorder(root); }
+	    bool search(int target) { return (search(target, root) != NULL); }
+	    void remove(int target) { root = remove(target, root); }
 };
 int main() {
     Binary_Tree tree;
