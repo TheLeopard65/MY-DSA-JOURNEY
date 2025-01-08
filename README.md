@@ -73,7 +73,7 @@ The repository is organized as follows:
 
 1. Clone this repository to your local machine using:
     ```bash
-    git clone https://github.com/TheLeopard65/DSA-Github.git
+    git clone https://github.com/TheLeopard65/MY-DSA-JOURNEY.git
     ```
 
 2. Navigate into the directory you are interested in.
