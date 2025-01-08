@@ -73,17 +73,16 @@ The repository is organized as follows:
 
 1. Clone this repository to your local machine using:
     ```bash
-    git clone https://github.com/your-username/DSA-Github.git
+    git clone https://github.com/TheLeopard65/DSA-Github.git
     ```
 
-2. Navigate into the directory you are interested in. For example:
-    ```bash
-    cd 10.Graphs
-    ```
+2. Navigate into the directory you are interested in.
 
 3. Read the `README.md` in each folder for detailed explanations of the concepts and the implementations in each file.
 
 4. Run the individual programs to see the algorithms in action.
+
+5. Open the Codes in VS-Code/nano/vim or any Editor of your Choice and Learn from the Code.
 
 ### Contribution
 
