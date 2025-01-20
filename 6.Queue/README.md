@@ -49,7 +49,7 @@ Here are the core operations supported by a Queue:
 2. **Efficient in FIFO Systems**: Operations on both ends (insertion and deletion) are efficient and happen in constant time.
 3. **Systematic Resource Management**: It helps in managing resources in situations where tasks are executed in the order they arrive (e.g., printer queue, CPU scheduling).
 4. **Non-Destructive Access**: You don’t need to worry about manipulating other elements when accessing or removing elements.
-  
+
 ---
 
 ## **Disadvantages of Queue:**
@@ -62,15 +62,15 @@ Here are the core operations supported by a Queue:
 
 ## **Time Complexity of Queue Operations:**
 
-| Operation        | Time Complexity |
-|------------------|-----------------|
-| Enqueue (Insertion) | O(1)          |
-| Dequeue (Deletion) | O(1)          |
-| Front            | O(1)            |
-| IsEmpty          | O(1)            |
-| IsFull           | O(1)            |
-| Size             | O(1)            |
-| Clear            | O(1)            |
+| Operation            | Time Complexity   |
+|----------------------|-------------------|
+| Enqueue (Insertion)  | O(1)              |
+| Dequeue (Deletion)   | O(1)              |
+| Front                | O(1)              |
+| IsEmpty              | O(1)              |
+| IsFull               | O(1)              |
+| Size                 | O(1)              |
+| Clear                | O(1)              |
 
 Since both **Enqueue** and **Dequeue** only involve adjusting pointers (front and rear), they can be executed in constant time, O(1).
 
@@ -114,29 +114,21 @@ Since both **Enqueue** and **Dequeue** only involve adjusting pointers (front an
 
 Queues are essential in various real-world and computational scenarios. Here are some key applications:
 
-1. **CPU Scheduling**:
-   - In operating systems, queues are used for scheduling processes. Tasks are handled in the order they arrive or based on priorities.
+1. **CPU Scheduling**: In operating systems, queues are used for scheduling processes. Tasks are handled in the order they arrive or based on priorities.
 
-2. **Print Queue**:
-   - In multi-user environments, when multiple users send print jobs to a printer, the print jobs are queued. The printer processes jobs in the order they are received.
+2. **Print Queue**: In multi-user environments, when multiple users send print jobs to a printer, the print jobs are queued. The printer processes jobs in the order they are received.
 
-3. **Call Center Systems**:
-   - Queues are used in call centers where incoming calls are queued and processed in the order they are received. This ensures a systematic approach to service.
+3. **Call Center Systems**: Queues are used in call centers where incoming calls are queued and processed in the order they are received. This ensures a systematic approach to service.
 
-4. **Breadth-First Search (BFS)**:
-   - BFS, an algorithm used for searching a graph or tree, uses a queue to keep track of nodes to be explored next.
+4. **Breadth-First Search (BFS)**: BFS, an algorithm used for searching a graph or tree, uses a queue to keep track of nodes to be explored next.
 
-5. **Network Traffic Management**:
-   - Queues are used in routers and switches to manage packet flow in network systems, ensuring that data packets are transmitted in the correct order.
+5. **Network Traffic Management**: Queues are used in routers and switches to manage packet flow in network systems, ensuring that data packets are transmitted in the correct order.
 
-6. **Job Scheduling**:
-   - In job scheduling systems, such as operating systems and cloud environments, jobs are queued based on their priority and arrival time.
+6. **Job Scheduling**: In job scheduling systems, such as operating systems and cloud environments, jobs are queued based on their priority and arrival time.
 
-7. **Buffering**:
-   - In data streaming and communication protocols, queues act as buffers to temporarily hold data before it's processed, such as in video streaming or data transmission.
+7. **Buffering**: In data streaming and communication protocols, queues act as buffers to temporarily hold data before it's processed, such as in video streaming or data transmission.
 
-8. **Simulation of Real-World Systems**:
-   - Queues are used in simulations to model and handle events such as the management of traffic at toll booths, processing tasks in factories, and other real-world processes where entities need to wait for their turn.
+8. **Simulation of Real-World Systems**: Queues are used in simulations to model and handle events such as the management of traffic at toll booths, processing tasks in factories, and other real-world processes where entities need to wait for their turn.
 
 ---
 

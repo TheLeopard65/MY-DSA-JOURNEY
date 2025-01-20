@@ -41,7 +41,7 @@ The time complexity of different operations in a linked list can vary based on t
 
 | Operation         | Time Complexity   |
 |-------------------|-------------------|
-| **Search**        | O(n)             |
+| **Search**        | O(n)              |
 | **Insertion (at the head)**   | O(1)             |
 | **Insertion (at the tail)**   | O(n) (if tail is not tracked) or O(1) (if tail is tracked) |
 | **Insertion (at the middle)** | O(n)             |

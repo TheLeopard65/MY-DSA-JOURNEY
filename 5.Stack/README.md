@@ -58,35 +58,25 @@ There are two primary types of stacks based on their implementation:
 
 Stacks are widely used in various real-world applications, some of which are listed below:
 
-1. **Function Call Stack (Recursion)**:
-   - When a function is called, its local variables and the return address are pushed onto the stack. When the function returns, the stack is popped to retrieve the address to return to, and the local variables are discarded.
+1. **Function Call Stack (Recursion)**: When a function is called, its local variables and the return address are pushed onto the stack. When the function returns, the stack is popped to retrieve the address to return to, and the local variables are discarded.
 
-2. **Expression Evaluation**:
-   - Stacks are used to evaluate expressions, particularly in **postfix** and **prefix** notation.
-   - Converting from infix to postfix and evaluating postfix expressions relies heavily on stacks.
+2. **Expression Evaluation**: Stacks are used to evaluate expressions, particularly in **postfix** and **prefix** notation. Converting from infix to postfix and evaluating postfix expressions relies heavily on stacks.
 
-3. **Undo Mechanism**:
-   - Many software applications use a stack to store user actions (like a sequence of changes made to a document). Each time an action is made, it is pushed onto the stack, and when the user clicks undo, the last action is popped.
+3. **Undo Mechanism**: Many software applications use a stack to store user actions (like a sequence of changes made to a document). Each time an action is made, it is pushed onto the stack, and when the user clicks undo, the last action is popped.
 
-4. **Browser History**:
-   - The **back** button of a web browser is implemented using a stack to keep track of the URLs visited. When you press back, the last URL is popped from the stack.
+4. **Browser History**: The **back** button of a web browser is implemented using a stack to keep track of the URLs visited. When you press back, the last URL is popped from the stack.
 
-5. **Depth-First Search (DFS) in Graphs**:
-   - In graph traversal, DFS uses a stack to keep track of the nodes to be explored.
+5. **Depth-First Search (DFS) in Graphs**: In graph traversal, DFS uses a stack to keep track of the nodes to be explored.
 
-6. **Expression Conversion**:
-   - Converting infix expressions (e.g., `(A + B) * (C + D)`) into postfix (e.g., `AB+CD+*`) or prefix notation (e.g., `*+AB+CD`) can be efficiently done using a stack.
+6. **Expression Conversion**: Converting infix expressions (e.g., `(A + B) * (C + D)`) into postfix (e.g., `AB+CD+*`) or prefix notation (e.g., `*+AB+CD`) can be efficiently done using a stack.
 
 ### **Use Cases of Stack**
 
-1. **Balancing Parentheses**:
-   - A stack can be used to check whether a given expression has balanced parentheses (or brackets or braces). Push opening symbols onto the stack and pop when you encounter a matching closing symbol.
+1. **Balancing Parentheses**: A stack can be used to check whether a given expression has balanced parentheses (or brackets or braces). Push opening symbols onto the stack and pop when you encounter a matching closing symbol.
 
-2. **Reverse a String**:
-   - By pushing each character of a string onto a stack and then popping them off, we can reverse the string.
+2. **Reverse a String**: By pushing each character of a string onto a stack and then popping them off, we can reverse the string.
 
-3. **Postfix Expression Evaluation**:
-   - A stack is used for evaluating postfix expressions (also known as Reverse Polish Notation). Each time an operator is encountered, operands are popped from the stack, the operation is performed, and the result is pushed back onto the stack.
+3. **Postfix Expression Evaluation**: A stack is used for evaluating postfix expressions (also known as Reverse Polish Notation). Each time an operator is encountered, operands are popped from the stack, the operation is performed, and the result is pushed back onto the stack.
 
 ### **Stack Operations in Detail**
 

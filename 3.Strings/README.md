@@ -41,7 +41,7 @@ In most programming languages like Python, Java, and C++, a string is a collecti
 
 1. **Simplicity:**
    - Strings provide a simple way to represent and manipulate textual data.
-   
+
 2. **Efficiency in Handling Textual Data:**
    - Strings make it easy to store and manipulate words, sentences, or paragraphs.
 
@@ -186,10 +186,10 @@ Here are some of the common operations performed on strings:
 | Deletion                 | O(n)            | Shifting of elements might be required         |
 | Search (Linear Search)   | O(n)            | Linear search through the string               |
 | Search (KMP/Boyer-Moore) | O(n)            | Faster search algorithms                       |
-| Concatenation            | O(n + m)        | O(n) for the first string, O(m) for the second|
+| Concatenation            | O(n + m)        | O(n) for the first string, O(m) for the second |
 | Substring Extraction     | O(n)            | Creating a new substring                       |
 | Replacement              | O(n)            | Iterating through the string to replace parts  |
-| Trim                    | O(n)            | Iterating through string to remove spaces      |
+| Trim                     | O(n)            | Iterating through string to remove spaces      |
 
 ---
 

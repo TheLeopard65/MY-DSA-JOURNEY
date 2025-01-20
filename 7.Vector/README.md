@@ -36,8 +36,8 @@ A **vector** is a sequence container in C++ that encapsulates dynamic arrays. It
 
 ## **Time Complexity of Vector Operations**
 
-| Operation                 | Time Complexity        | Notes                                     |
-|---------------------------|------------------------|-------------------------------------------|
+| Operation                  | Time Complexity        | Notes                                     |
+|----------------------------|------------------------|-------------------------------------------|
 | **Access Element**         | O(1)                   | Constant time access by index.           |
 | **Insertion at End (`push_back`)** | Amortized O(1)       | Average O(1), but O(n) when resizing.    |
 | **Insertion at Beginning/ Middle** | O(n)              | Requires shifting elements.              |
@@ -110,4 +110,3 @@ Vectors allow for inserting elements at both ends and at arbitrary positions.
 ## **Conclusion**
 
 Vectors are a fundamental part of data structures in C++ due to their dynamic resizing and efficient memory management. While they offer many advantages in terms of flexibility and ease of use, they come with the cost of slower insertions/deletions at positions other than the end. However, they remain one of the most widely used data structures for handling dynamic datasets in both competitive programming and real-world applications.
-
