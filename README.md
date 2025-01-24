@@ -36,7 +36,7 @@ The repository is organized as follows:
 
 ```
 .
-├── 1.Time-Complexity        # Understanding Time Complexity
+├── 1.Complexity-Analysis    # Understanding Time & Space Complexity
 ├── 2.Array                  # Array implementations and problems
 ├── 3.Strings                # String manipulation techniques
 ├── 4.Linked-Lists           # Linked List implementations
